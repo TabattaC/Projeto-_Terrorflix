@@ -1,0 +1,148 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* Eleemntos base  */
+body{
+    background: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color:white
+
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/* Cria um espaço entre os elementos entre H2 e a 2º tag  */
+}
+
+.container{
+    margin-left: 20px;
+}
+.filme-principal.container{
+    margin-left: 20px;
+}
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times; 
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+
+}
+
+/* Filme Principal */
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa_foto.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .sinopse{
+     margin-bottom: 40px;
+     margin-top: 10px;
+}
+.filme-principal .container{
+    width: 70%;
+}
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, 0.50);
+    border:none;
+    color:white;
+    padding: 15px 30px; 
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /* Indicar que é um botão */
+    transition: .3s ease all; 
+
+}
+.botao:hover{
+    background-color:white;
+    color: black;
+
+}
+.botao i{
+    margin-right: 8px; 
+}
+
+.box-filme{
+    /* definir altura e largura das imagens que irão aparecer */
+    height: 100%; 
+    width: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-top:5px;
+}
+.Modal{
+    position: fixed;
+    top: 0; bottom:0;
+    left:0; right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.modal{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 0.5rem;
+    position: relative;
+    background-color: white;
+    color: black;
+    
+}
+
+.closemodal{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    
+}
+.closemodal.haver{
+    background-color: darkgray;
+}
+
+.show-modal{
+    opacity: 1;
+    display: block;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <!-- Responsividade CSS -->
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- Arquivos owl CSS -->
+    <link rel="stylesheet" href="../style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="../style/owl/owl.theme.default.min.css">
+
+    <title>TerrorFLix </title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">TerrorFlix</h2>
+            <nav> <!-- Tag para criar menus de navegação -->
+               <a href="#">Inicio</a> 
+               <a href="pag5.html">Filmes</a> 
+               <a href="pag2.html">Series</a> 
+               <a href="pag4.html">Documentários</a> 
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo"> Rua do Medo: 1666 – Parte 3 </h3>
+                <p class="sinopse">De volta a 1666, Deena descobre a verdade sobre Sarah Fier. Em 1994, os amigos lutam para sobreviver e pelo futuro de Shadyside.</p>
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+
+                    <button role="button" class="botao"; onclick="showModal()">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÔES
+                    </button>
+
+                    <div class="Modal" id="Modal">
+                        <div class="modal"  >
+                            <div class="closemodal" onclick="closeModal()"> X </div>
+                            <div class="modal-conteudo">
+                                <h2> INFORMAÇÕES SOBRE O FILME </h2>
+                                <p>17 de julho de 2021 na Netflix / 1h 54min / Terror</p>
+                                <p>Direção: Leigh Janiak</p>
+                                <p>Roteiro Phil Graziadei, Leigh Janiak</p>
+                                <p>Título original Fear Street: 1666</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="carrosel-filmes">
+            <div class="owl-carousel owl-theme">
+                <div classe="item">
+                    <img class="box-filme" src="../img/minhalista_filme1.jpg" alt="" srcset="">
+                </div>
+                <div classe="item">
+                    <img class="box-filme" src="../img/minhalista_filme2.jpg" alt="" srcset="">  
+                </div>
+                <div classe="item">
+                    <img class="box-filme" src="../img/minhalista_filme3.jpg" alt="" srcset="">   
+                </div>
+                <div classe="item">
+                    <img class="box-filme" src="../img/minhalista_filme4.jpg" alt="" srcset="">   
+                </div>
+                <div classe="item">
+                    <img class="box-filme" src="../img/minhalista_filme5.jpg" alt="" srcset="">   
+                </div>
+                <div classe="item">
+                    <img class="box-filme" src="../img/minhalista_filme6.jpg" alt="" srcset="">   
+                </div>
+                <div classe="item">
+                    <img class="box-filme" src="../img/minhalista_filme7.jpg" alt="" srcset="">   
+                </div>
+                <div classe="item">
+                    <img class="box-filme" src="../img/minhalista_filme8.jpg" alt="" srcset="">   
+                </div>
+                <div classe="item">
+                    <img class="box-filme" src="../img/minhalista_filme9.jpg" alt="" srcset="">   
+                </div>
+                <div classe="item">
+                    <img class="box-filme" src="../img/minhalista_filme10.jpg" alt="" srcset="">   
+                </div>
+                <div classe="item">
+                    <img class="box-filme" src="../img/minhalista_filme11.jpg" alt="" srcset="">   
+                </div>
+                <div classe="item">
+                    <img class="box-filme" src="../img/minhalista_filme12.jpg" alt="" srcset="">   
+                </div>
+                <div classe="item">
+                    <img class="box-filme" src="../img/minhalista_filme13.jpg" alt="" srcset="">   
+                </div>
+                <div classe="item">
+                    <img class="box-filme" src="../img/minhalista_filme14.jpg" alt="" srcset="">   
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    
+    <script src="https://kit.fontawesome.com/4ba45f6cf5.js" crossorigin="anonymous"></script>
+
+    <script src="../js/owl/jquery.min.js"></script>
+    <script src="../js/owl/owl.carousel.min.js"></script>
+    
+    <script src="../js/owl/main.js"></script>
+</body>
+
+</html>
